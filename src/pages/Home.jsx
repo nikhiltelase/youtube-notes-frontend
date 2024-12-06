@@ -41,7 +41,7 @@ function Home() {
             <div className="rounded-lg overflow-hidden aspect-video">
               <iframe
                 className="w-full h-full"
-                src={`https://www.youtube.com/embed/${embedVideoUrl || "LbBKfYILEiHU9Uqn"}`}
+                src={`https://www.youtube.com/embed/${embedVideoUrl || "lKjneOaxumc"}`}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { validateYouTubeUrl, extractVideoId } from '../utils/videoUtils';
 
-const API_BASE_URL = '/api/transcript';
+const backend_url = import.meta.env.VITE_BACKEND_URL
+const API_BASE_URL = `${backend_url}/api/transcript`;
 
 export const getTranscript = async (videoUrl) => {
   try {
