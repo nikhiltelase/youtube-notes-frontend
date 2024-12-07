@@ -3,6 +3,7 @@ import { validateYouTubeUrl, extractVideoId } from '../utils/videoUtils';
 
 const backend_url = import.meta.env.VITE_BACKEND_URL
 const API_BASE_URL = `${backend_url}/api/transcript`;
+console.log(API_BASE_URL)
 
 export const getTranscript = async (videoUrl) => {
   try {
@@ -21,8 +22,9 @@ export const getTranscript = async (videoUrl) => {
     if (!response.data) {
       throw new Error('No transcript available for this video');
     }
-
-    return response.data;
+    
+    console.log(response.data.transcript)
+    return response.data.transcript;
 
   } catch (error) {
     console.error(error); // Improved logging for debugging
